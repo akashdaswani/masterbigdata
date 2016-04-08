@@ -1,12 +1,26 @@
 from pyspark import SparkContext
 from pyspark.sql import SQLContext
 
+import ConfigParser
+
 if __name__ == "__main__":
-    sc= SparkContext(appName="PythonSparkLocal")
+    sc= SparkContext(appName="SparkContext")
 
     sqlContext = SQLContext(sc)
 
-    df = sqlContext.read.text("/Users/akash/PycharmProjects/masterbigdata/datasets/batch/calidadaire/datos13.txt")
+    config = ConfigParser.ConfigParser()
+    config.read('configuration.cfg')
+
+    filesInDisk = config.getboolean('BatchProperties', 'FilesInDisk')
+
+    filesLocaltion = ""
+
+    if filesInDisk:
+        filesLocaltion = config.get('BatchProperties', 'FilesLocaltionDisk')
+    else:
+        filesLocaltion = config.get('BatchProperties', 'FilesLocaltionHDFS')
+
+    df = sqlContext.read.text(filesLocaltion)
 
     # Displays the content of the DataFrame to stdout
     df.show()
