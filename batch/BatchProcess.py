@@ -1,4 +1,4 @@
-from pyspark import SparkContext
+from pyspark import SparkContext, SparkConf
 from pyspark.sql import SQLContext
 
 import ConfigParser
@@ -24,3 +24,4 @@ if __name__ == "__main__":
 
     # Displays the content of the DataFrame to stdout
     df.show()
+
