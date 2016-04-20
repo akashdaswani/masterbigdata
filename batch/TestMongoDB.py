@@ -44,7 +44,7 @@ def main():
     # BASE_DIR = /Users/akash/PycharmProjects/masterbigdata
 
     # Leemos un fichero de ejemplo
-    file = os.path.join(BASE_DIR + '/datasets/batch/calidadaire', 'datos13.txt')
+    file = os.path.join(BASE_DIR + '/datasets/batch/calidadaire', 'ficheroSalida.txt')
     rddfFile = sc.textFile(file)
 
      # Almancemos en mongodb el fichero

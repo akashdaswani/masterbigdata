@@ -1,0 +1,289 @@
+Dióxido de Azufre|Pza. de España|28079004|01|38|04|13|01|174|31
+Dióxido de Azufre|Pza. de España|28079004|01|38|04|13|02|148|28
+Dióxido de Azufre|Pza. de España|28079004|01|38|04|13|03|113|31
+Dióxido de Azufre|Pza. de España|28079004|01|38|04|13|04|105|30
+Dióxido de Azufre|Pza. de España|28079004|01|38|04|13|05|112|31
+Dióxido de Azufre|Pza. de España|28079004|01|38|04|13|06|101|30
+Dióxido de Azufre|Pza. de España|28079004|01|38|04|13|07|111|31
+Dióxido de Azufre|Pza. de España|28079004|01|38|04|13|08|103|31
+Dióxido de Azufre|Pza. de España|28079004|01|38|04|13|09|121|30
+Dióxido de Azufre|Pza. de España|28079004|01|38|04|13|10|123|30
+Dióxido de Azufre|Pza. de España|28079004|01|38|04|13|11|188|30
+Dióxido de Azufre|Pza. de España|28079004|01|38|04|13|12|288|31
+Ozono|Pza. de España|28079004|06|48|04|13|01|153|31
+Ozono|Pza. de España|28079004|06|48|04|13|02|127|28
+Ozono|Pza. de España|28079004|06|48|04|13|03|115|31
+Ozono|Pza. de España|28079004|06|48|04|13|04|98|30
+Ozono|Pza. de España|28079004|06|48|04|13|05|97|31
+Ozono|Pza. de España|28079004|06|48|04|13|06|85|30
+Ozono|Pza. de España|28079004|06|48|04|13|07|92|31
+Ozono|Pza. de España|28079004|06|48|04|13|08|79|29
+Ozono|Pza. de España|28079004|06|48|04|13|09|110|30
+Ozono|Pza. de España|28079004|06|48|04|13|10|116|30
+Ozono|Pza. de España|28079004|06|48|04|13|11|112|30
+Ozono|Pza. de España|28079004|06|48|04|13|12|186|31
+Monóxido de Nitrógeno|Pza. de España|28079004|07|08|04|13|01|1036|31
+Monóxido de Nitrógeno|Pza. de España|28079004|07|08|04|13|02|818|28
+Monóxido de Nitrógeno|Pza. de España|28079004|07|08|04|13|03|608|31
+Monóxido de Nitrógeno|Pza. de España|28079004|07|08|04|13|04|490|30
+Monóxido de Nitrógeno|Pza. de España|28079004|07|08|04|13|05|504|31
+Monóxido de Nitrógeno|Pza. de España|28079004|07|08|04|13|06|426|30
+Monóxido de Nitrógeno|Pza. de España|28079004|07|08|04|13|07|420|31
+Monóxido de Nitrógeno|Pza. de España|28079004|07|08|04|13|08|362|31
+Monóxido de Nitrógeno|Pza. de España|28079004|07|08|04|13|09|988|30
+Monóxido de Nitrógeno|Pza. de España|28079004|07|08|04|13|10|1129|30
+Monóxido de Nitrógeno|Pza. de España|28079004|07|08|04|13|11|1278|30
+Monóxido de Nitrógeno|Pza. de España|28079004|07|08|04|13|12|1140|31
+Óxidos de Nitrógeno|Pza. de España|28079004|08|08|04|13|01|1592|31
+Óxidos de Nitrógeno|Pza. de España|28079004|08|08|04|13|02|1388|28
+Óxidos de Nitrógeno|Pza. de España|28079004|08|08|04|13|03|1209|31
+Óxidos de Nitrógeno|Pza. de España|28079004|08|08|04|13|04|1038|30
+Óxidos de Nitrógeno|Pza. de España|28079004|08|08|04|13|05|1121|31
+Óxidos de Nitrógeno|Pza. de España|28079004|08|08|04|13|06|1029|30
+Óxidos de Nitrógeno|Pza. de España|28079004|08|08|04|13|07|1351|31
+Óxidos de Nitrógeno|Pza. de España|28079004|08|08|04|13|08|1127|31
+Óxidos de Nitrógeno|Pza. de España|28079004|08|08|04|13|09|1593|30
+Óxidos de Nitrógeno|Pza. de España|28079004|08|08|04|13|10|1514|30
+Óxidos de Nitrógeno|Pza. de España|28079004|08|08|04|13|11|1478|30
+Óxidos de Nitrógeno|Pza. de España|28079004|08|08|04|13|12|1890|31
+Velocidad del viento|Pza. de España|28079004|81|98|04|13|01|1768|31
+Velocidad del viento|Pza. de España|28079004|81|98|04|13|02|1514|28
+Velocidad del viento|Pza. de España|28079004|81|98|04|13|03|1810|31
+Velocidad del viento|Pza. de España|28079004|81|98|04|13|04|1593|30
+Velocidad del viento|Pza. de España|28079004|81|98|04|13|05|1442|31
+Velocidad del viento|Pza. de España|28079004|81|98|04|13|06|1987|30
+Velocidad del viento|Pza. de España|28079004|81|98|04|13|07|1742|31
+Velocidad del viento|Pza. de España|28079004|81|98|04|13|08|1587|31
+Velocidad del viento|Pza. de España|28079004|81|98|04|13|09|1557|30
+Velocidad del viento|Pza. de España|28079004|81|98|04|13|10|1783|30
+Velocidad del viento|Pza. de España|28079004|81|98|04|13|11|1353|30
+Velocidad del viento|Pza. de España|28079004|81|98|04|13|12|1924|31
+Dirección del viento|Pza. de España|28079004|82|98|04|13|01|201|31
+Dirección del viento|Pza. de España|28079004|82|98|04|13|02|182|28
+Dirección del viento|Pza. de España|28079004|82|98|04|13|03|233|31
+Dirección del viento|Pza. de España|28079004|82|98|04|13|04|258|30
+Dirección del viento|Pza. de España|28079004|82|98|04|13|05|245|31
+Dirección del viento|Pza. de España|28079004|82|98|04|13|06|213|30
+Dirección del viento|Pza. de España|28079004|82|98|04|13|07|252|31
+Dirección del viento|Pza. de España|28079004|82|98|04|13|08|221|31
+Dirección del viento|Pza. de España|28079004|82|98|04|13|09|228|30
+Dirección del viento|Pza. de España|28079004|82|98|04|13|10|217|30
+Dirección del viento|Pza. de España|28079004|82|98|04|13|11|212|30
+Dirección del viento|Pza. de España|28079004|82|98|04|13|12|211|31
+Temperatura|Pza. de España|28079004|83|98|04|13|01|1728|31
+Temperatura|Pza. de España|28079004|83|98|04|13|02|1692|28
+Temperatura|Pza. de España|28079004|83|98|04|13|03|1769|31
+Temperatura|Pza. de España|28079004|83|98|04|13|04|1687|30
+Temperatura|Pza. de España|28079004|83|98|04|13|05|1660|31
+Temperatura|Pza. de España|28079004|83|98|04|13|06|1551|30
+Temperatura|Pza. de España|28079004|83|98|04|13|07|1911|31
+Temperatura|Pza. de España|28079004|83|98|04|13|08|1916|31
+Temperatura|Pza. de España|28079004|83|98|04|13|09|1219|30
+Temperatura|Pza. de España|28079004|83|98|04|13|10|1670|30
+Temperatura|Pza. de España|28079004|83|98|04|13|11|1497|30
+Temperatura|Pza. de España|28079004|83|98|04|13|12|1687|31
+N/A|Pza. de España|28079004|85|98|04|13|01|728|31
+N/A|Pza. de España|28079004|85|98|04|13|02|669|28
+N/A|Pza. de España|28079004|85|98|04|13|03|747|31
+N/A|Pza. de España|28079004|85|98|04|13|04|573|30
+N/A|Pza. de España|28079004|85|98|04|13|05|609|31
+N/A|Pza. de España|28079004|85|98|04|13|06|526|30
+N/A|Pza. de España|28079004|85|98|04|13|07|533|31
+N/A|Pza. de España|28079004|85|98|04|13|08|558|31
+N/A|Pza. de España|28079004|85|98|04|13|09|548|30
+N/A|Pza. de España|28079004|85|98|04|13|10|573|30
+N/A|Pza. de España|28079004|85|98|04|13|11|552|30
+N/A|Pza. de España|28079004|85|98|04|13|12|526|31
+Humedad relativa|Pza. de España|28079004|86|98|04|13|01|2334|31
+Humedad relativa|Pza. de España|28079004|86|98|04|13|02|1796|28
+Humedad relativa|Pza. de España|28079004|86|98|04|13|03|2299|31
+Humedad relativa|Pza. de España|28079004|86|98|04|13|04|1826|30
+Humedad relativa|Pza. de España|28079004|86|98|04|13|05|1753|31
+Humedad relativa|Pza. de España|28079004|86|98|04|13|06|1427|30
+Humedad relativa|Pza. de España|28079004|86|98|04|13|07|1289|31
+Humedad relativa|Pza. de España|28079004|86|98|04|13|08|1362|31
+Humedad relativa|Pza. de España|28079004|86|98|04|13|09|1629|30
+Humedad relativa|Pza. de España|28079004|86|98|04|13|10|2206|30
+Humedad relativa|Pza. de España|28079004|86|98|04|13|11|2116|30
+Humedad relativa|Pza. de España|28079004|86|98|04|13|12|2382|31
+Precipitación|Pza. de España|28079004|89|98|04|13|01|150|31
+Precipitación|Pza. de España|28079004|89|98|04|13|02|150|28
+Precipitación|Pza. de España|28079004|89|98|04|13|03|500|31
+Precipitación|Pza. de España|28079004|89|98|04|13|04|250|30
+Precipitación|Pza. de España|28079004|89|98|04|13|05|250|31
+Precipitación|Pza. de España|28079004|89|98|04|13|06|0|30
+Precipitación|Pza. de España|28079004|89|98|04|13|07|0|31
+Precipitación|Pza. de España|28079004|89|98|04|13|08|0|31
+Precipitación|Pza. de España|28079004|89|98|04|13|09|150|30
+Precipitación|Pza. de España|28079004|89|98|04|13|10|200|30
+Precipitación|Pza. de España|28079004|89|98|04|13|11|50|30
+Precipitación|Pza. de España|28079004|89|98|04|13|12|150|31
+Dióxido de Azufre|Escuelas Aguirre|28079008|01|38|04|13|01|158|20
+Dióxido de Azufre|Escuelas Aguirre|28079008|01|38|04|13|02|238|27
+Dióxido de Azufre|Escuelas Aguirre|28079008|01|38|04|13|03|233|31
+Dióxido de Azufre|Escuelas Aguirre|28079008|01|38|04|13|04|162|30
+Dióxido de Azufre|Escuelas Aguirre|28079008|01|38|04|13|05|147|31
+Dióxido de Azufre|Escuelas Aguirre|28079008|01|38|04|13|06|117|30
+Dióxido de Azufre|Escuelas Aguirre|28079008|01|38|04|13|07|126|31
+Dióxido de Azufre|Escuelas Aguirre|28079008|01|38|04|13|08|124|31
+Dióxido de Azufre|Escuelas Aguirre|28079008|01|38|04|13|09|127|30
+Dióxido de Azufre|Escuelas Aguirre|28079008|01|38|04|13|10|156|31
+Dióxido de Azufre|Escuelas Aguirre|28079008|01|38|04|13|11|258|29
+Dióxido de Azufre|Escuelas Aguirre|28079008|01|38|04|13|12|403|31
+Ozono|Escuelas Aguirre|28079008|06|48|04|13|01|97|20
+Ozono|Escuelas Aguirre|28079008|06|48|04|13|02|116|27
+Ozono|Escuelas Aguirre|28079008|06|48|04|13|03|109|31
+Ozono|Escuelas Aguirre|28079008|06|48|04|13|04|111|30
+Ozono|Escuelas Aguirre|28079008|06|48|04|13|05|105|31
+Ozono|Escuelas Aguirre|28079008|06|48|04|13|06|104|30
+Ozono|Escuelas Aguirre|28079008|06|48|04|13|07|77|31
+Ozono|Escuelas Aguirre|28079008|06|48|04|13|08|43|31
+Ozono|Escuelas Aguirre|28079008|06|48|04|13|09|69|30
+Ozono|Escuelas Aguirre|28079008|06|48|04|13|10|102|31
+Ozono|Escuelas Aguirre|28079008|06|48|04|13|11|107|29
+Ozono|Escuelas Aguirre|28079008|06|48|04|13|12|161|31
+Monóxido de Nitrógeno|Escuelas Aguirre|28079008|07|08|04|13|01|729|20
+Monóxido de Nitrógeno|Escuelas Aguirre|28079008|07|08|04|13|02|919|27
+Monóxido de Nitrógeno|Escuelas Aguirre|28079008|07|08|04|13|03|641|31
+Monóxido de Nitrógeno|Escuelas Aguirre|28079008|07|08|04|13|04|554|30
+Monóxido de Nitrógeno|Escuelas Aguirre|28079008|07|08|04|13|05|464|31
+Monóxido de Nitrógeno|Escuelas Aguirre|28079008|07|08|04|13|06|514|30
+Monóxido de Nitrógeno|Escuelas Aguirre|28079008|07|08|04|13|07|455|31
+Monóxido de Nitrógeno|Escuelas Aguirre|28079008|07|08|04|13|08|301|31
+Monóxido de Nitrógeno|Escuelas Aguirre|28079008|07|08|04|13|09|764|30
+Monóxido de Nitrógeno|Escuelas Aguirre|28079008|07|08|04|13|10|1192|31
+Monóxido de Nitrógeno|Escuelas Aguirre|28079008|07|08|04|13|11|1055|29
+Monóxido de Nitrógeno|Escuelas Aguirre|28079008|07|08|04|13|12|1579|31
+Óxidos de Nitrógeno|Escuelas Aguirre|28079008|08|08|04|13|01|1006|20
+Óxidos de Nitrógeno|Escuelas Aguirre|28079008|08|08|04|13|02|1214|27
+Óxidos de Nitrógeno|Escuelas Aguirre|28079008|08|08|04|13|03|1133|31
+Óxidos de Nitrógeno|Escuelas Aguirre|28079008|08|08|04|13|04|978|30
+Óxidos de Nitrógeno|Escuelas Aguirre|28079008|08|08|04|13|05|1011|31
+Óxidos de Nitrógeno|Escuelas Aguirre|28079008|08|08|04|13|06|1005|30
+Óxidos de Nitrógeno|Escuelas Aguirre|28079008|08|08|04|13|07|1266|31
+Óxidos de Nitrógeno|Escuelas Aguirre|28079008|08|08|04|13|08|1049|31
+Óxidos de Nitrógeno|Escuelas Aguirre|28079008|08|08|04|13|09|1380|30
+Óxidos de Nitrógeno|Escuelas Aguirre|28079008|08|08|04|13|10|1634|31
+Óxidos de Nitrógeno|Escuelas Aguirre|28079008|08|08|04|13|11|1448|29
+Óxidos de Nitrógeno|Escuelas Aguirre|28079008|08|08|04|13|12|1881|31
+Partículas < 2.5 µm|Escuelas Aguirre|28079008|09|47|04|13|01|243|20
+Partículas < 2.5 µm|Escuelas Aguirre|28079008|09|47|04|13|02|279|27
+Partículas < 2.5 µm|Escuelas Aguirre|28079008|09|47|04|13|03|283|31
+Partículas < 2.5 µm|Escuelas Aguirre|28079008|09|47|04|13|04|304|30
+Partículas < 2.5 µm|Escuelas Aguirre|28079008|09|47|04|13|05|285|31
+Partículas < 2.5 µm|Escuelas Aguirre|28079008|09|47|04|13|06|355|30
+Partículas < 2.5 µm|Escuelas Aguirre|28079008|09|47|04|13|07|471|31
+Partículas < 2.5 µm|Escuelas Aguirre|28079008|09|47|04|13|08|433|31
+Partículas < 2.5 µm|Escuelas Aguirre|28079008|09|47|04|13|09|396|30
+Partículas < 2.5 µm|Escuelas Aguirre|28079008|09|47|04|13|10|366|31
+Partículas < 2.5 µm|Escuelas Aguirre|28079008|09|47|04|13|11|282|29
+Partículas < 2.5 µm|Escuelas Aguirre|28079008|09|47|04|13|12|357|29
+Partículas < 10 µm|Escuelas Aguirre|28079008|10|47|04|13|01|176|20
+Partículas < 10 µm|Escuelas Aguirre|28079008|10|47|04|13|02|255|27
+Partículas < 10 µm|Escuelas Aguirre|28079008|10|47|04|13|03|359|31
+Partículas < 10 µm|Escuelas Aguirre|28079008|10|47|04|13|04|610|30
+Partículas < 10 µm|Escuelas Aguirre|28079008|10|47|04|13|05|526|31
+Partículas < 10 µm|Escuelas Aguirre|28079008|10|47|04|13|06|876|30
+Partículas < 10 µm|Escuelas Aguirre|28079008|10|47|04|13|07|1164|31
+Partículas < 10 µm|Escuelas Aguirre|28079008|10|47|04|13|08|1092|31
+Partículas < 10 µm|Escuelas Aguirre|28079008|10|47|04|13|09|856|30
+Partículas < 10 µm|Escuelas Aguirre|28079008|10|47|04|13|10|775|31
+Partículas < 10 µm|Escuelas Aguirre|28079008|10|47|04|13|11|519|29
+Partículas < 10 µm|Escuelas Aguirre|28079008|10|47|04|13|12|594|31
+Ozono|Escuelas Aguirre|28079008|14|06|04|13|01|384|20
+Ozono|Escuelas Aguirre|28079008|14|06|04|13|02|785|27
+Ozono|Escuelas Aguirre|28079008|14|06|04|13|03|1229|31
+Ozono|Escuelas Aguirre|28079008|14|06|04|13|04|1498|30
+Ozono|Escuelas Aguirre|28079008|14|06|04|13|05|1645|31
+Ozono|Escuelas Aguirre|28079008|14|06|04|13|06|1674|30
+Ozono|Escuelas Aguirre|28079008|14|06|04|13|07|2126|31
+Ozono|Escuelas Aguirre|28079008|14|06|04|13|08|1987|31
+Ozono|Escuelas Aguirre|28079008|14|06|04|13|09|1314|30
+Ozono|Escuelas Aguirre|28079008|14|06|04|13|10|716|31
+Ozono|Escuelas Aguirre|28079008|14|06|04|13|11|603|29
+Ozono|Escuelas Aguirre|28079008|14|06|04|13|12|527|31
+Tolueno|Escuelas Aguirre|28079008|20|59|04|13|01|1003|20
+Tolueno|Escuelas Aguirre|28079008|20|59|04|13|02|453|27
+Tolueno|Escuelas Aguirre|28079008|20|59|04|13|03|211|31
+Tolueno|Escuelas Aguirre|28079008|20|59|04|13|04|275|30
+Tolueno|Escuelas Aguirre|28079008|20|59|04|13|05|245|31
+Tolueno|Escuelas Aguirre|28079008|20|59|04|13|06|268|30
+Tolueno|Escuelas Aguirre|28079008|20|59|04|13|07|268|31
+Tolueno|Escuelas Aguirre|28079008|20|59|04|13|08|320|31
+Tolueno|Escuelas Aguirre|28079008|20|59|04|13|09|774|29
+Tolueno|Escuelas Aguirre|28079008|20|59|04|13|10|1537|31
+Tolueno|Escuelas Aguirre|28079008|20|59|04|13|11|1014|27
+Tolueno|Escuelas Aguirre|28079008|20|59|04|13|12|1401|30
+Benceno|Escuelas Aguirre|28079008|30|59|04|13|01|345|20
+Benceno|Escuelas Aguirre|28079008|30|59|04|13|02|138|27
+Benceno|Escuelas Aguirre|28079008|30|59|04|13|03|79|31
+Benceno|Escuelas Aguirre|28079008|30|59|04|13|04|81|30
+Benceno|Escuelas Aguirre|28079008|30|59|04|13|05|72|31
+Benceno|Escuelas Aguirre|28079008|30|59|04|13|06|72|30
+Benceno|Escuelas Aguirre|28079008|30|59|04|13|07|77|31
+Benceno|Escuelas Aguirre|28079008|30|59|04|13|08|68|31
+Benceno|Escuelas Aguirre|28079008|30|59|04|13|09|117|29
+Benceno|Escuelas Aguirre|28079008|30|59|04|13|10|242|31
+Benceno|Escuelas Aguirre|28079008|30|59|04|13|11|188|27
+Benceno|Escuelas Aguirre|28079008|30|59|04|13|12|309|30
+Etilbenceno|Escuelas Aguirre|28079008|35|59|04|13|01|313|20
+Etilbenceno|Escuelas Aguirre|28079008|35|59|04|13|02|203|27
+Etilbenceno|Escuelas Aguirre|28079008|35|59|04|13|03|248|31
+Etilbenceno|Escuelas Aguirre|28079008|35|59|04|13|04|197|30
+Etilbenceno|Escuelas Aguirre|28079008|35|59|04|13|05|219|31
+Etilbenceno|Escuelas Aguirre|28079008|35|59|04|13|06|198|30
+Etilbenceno|Escuelas Aguirre|28079008|35|59|04|13|07|250|31
+Etilbenceno|Escuelas Aguirre|28079008|35|59|04|13|08|259|31
+Etilbenceno|Escuelas Aguirre|28079008|35|59|04|13|09|262|29
+Etilbenceno|Escuelas Aguirre|28079008|35|59|04|13|10|248|31
+Etilbenceno|Escuelas Aguirre|28079008|35|59|04|13|11|165|27
+Etilbenceno|Escuelas Aguirre|28079008|35|59|04|13|12|241|30
+N/A|Escuelas Aguirre|28079008|85|98|04|13|01|409|20
+N/A|Escuelas Aguirre|28079008|85|98|04|13|02|542|27
+N/A|Escuelas Aguirre|28079008|85|98|04|13|03|614|31
+N/A|Escuelas Aguirre|28079008|85|98|04|13|04|612|30
+N/A|Escuelas Aguirre|28079008|85|98|04|13|05|642|31
+N/A|Escuelas Aguirre|28079008|85|98|04|13|06|728|30
+N/A|Escuelas Aguirre|28079008|85|98|04|13|07|721|31
+N/A|Escuelas Aguirre|28079008|85|98|04|13|08|711|31
+N/A|Escuelas Aguirre|28079008|85|98|04|13|09|636|30
+N/A|Escuelas Aguirre|28079008|85|98|04|13|10|620|31
+N/A|Escuelas Aguirre|28079008|85|98|04|13|11|604|29
+N/A|Escuelas Aguirre|28079008|85|98|04|13|12|651|31
+Monóxido de Nitrógeno|Av. Ramón y Cajal|28079011|07|08|04|13|01|1017|31
+Monóxido de Nitrógeno|Av. Ramón y Cajal|28079011|07|08|04|13|02|728|28
+Monóxido de Nitrógeno|Av. Ramón y Cajal|28079011|07|08|04|13|03|375|31
+Monóxido de Nitrógeno|Av. Ramón y Cajal|28079011|07|08|04|13|04|337|30
+Monóxido de Nitrógeno|Av. Ramón y Cajal|28079011|07|08|04|13|05|412|31
+Monóxido de Nitrógeno|Av. Ramón y Cajal|28079011|07|08|04|13|06|370|30
+Monóxido de Nitrógeno|Av. Ramón y Cajal|28079011|07|08|04|13|07|297|30
+Monóxido de Nitrógeno|Av. Ramón y Cajal|28079011|07|08|04|13|08|246|29
+Monóxido de Nitrógeno|Av. Ramón y Cajal|28079011|07|08|04|13|09|820|30
+Monóxido de Nitrógeno|Av. Ramón y Cajal|28079011|07|08|04|13|10|1179|31
+Monóxido de Nitrógeno|Av. Ramón y Cajal|28079011|07|08|04|13|11|734|30
+Monóxido de Nitrógeno|Av. Ramón y Cajal|28079011|07|08|04|13|12|1076|31
+Óxidos de Nitrógeno|Av. Ramón y Cajal|28079011|08|08|04|13|01|1722|31
+Óxidos de Nitrógeno|Av. Ramón y Cajal|28079011|08|08|04|13|02|1357|28
+Óxidos de Nitrógeno|Av. Ramón y Cajal|28079011|08|08|04|13|03|1099|31
+Óxidos de Nitrógeno|Av. Ramón y Cajal|28079011|08|08|04|13|04|897|30
+Óxidos de Nitrógeno|Av. Ramón y Cajal|28079011|08|08|04|13|05|975|31
+Óxidos de Nitrógeno|Av. Ramón y Cajal|28079011|08|08|04|13|06|902|30
+Óxidos de Nitrógeno|Av. Ramón y Cajal|28079011|08|08|04|13|07|1135|30
+Óxidos de Nitrógeno|Av. Ramón y Cajal|28079011|08|08|04|13|08|806|29
+Óxidos de Nitrógeno|Av. Ramón y Cajal|28079011|08|08|04|13|09|1404|30
+Óxidos de Nitrógeno|Av. Ramón y Cajal|28079011|08|08|04|13|10|1506|31
+Óxidos de Nitrógeno|Av. Ramón y Cajal|28079011|08|08|04|13|11|1316|30
+Óxidos de Nitrógeno|Av. Ramón y Cajal|28079011|08|08|04|13|12|1716|31
+Tolueno|Av. Ramón y Cajal|28079011|20|59|04|13|01|1661|31
+Tolueno|Av. Ramón y Cajal|28079011|20|59|04|13|02|1314|28
+Tolueno|Av. Ramón y Cajal|28079011|20|59|04|13|03|1072|31
+Tolueno|Av. Ramón y Cajal|28079011|20|59|04|13|04|1083|30
+Tolueno|Av. Ramón y Cajal|28079011|20|59|04|13|05|1326|31
+Tolueno|Av. Ramón y Cajal|28079011|20|59|04|13|06|1273|30
+Tolueno|Av. Ramón y Cajal|28079011|20|59|04|13|07|1438|30
+Tolueno|Av. Ramón y Cajal|28079011|20|59|04|13|08|1274|31
+Tolueno|Av. Ramón y Cajal|28079011|20|59|04|13|09|1625|30
+Tolueno|Av. Ramón y Cajal|28079011|20|59|04|13|10|1838|31
+Tolueno|Av. Ramón y Cajal|28079011|20|59|04|13|11|1431|30
+Tolueno|Av. Ramón y Cajal|28079011|20|59|04|13|12|1588|31
+Benceno|Av. Ramón y Cajal|28079011|30|59|04|13|01|788|31
