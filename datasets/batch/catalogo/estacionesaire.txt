@@ -1,0 +1,45 @@
+28079001|Paseo de Recoletos|- 04/05/2009 (14:00 h.)
+28079002|Glorieta de Carlos V|- 04/12/2006 (11:00 h.)
+28079003|Plaza del Carmen| * Código desde enero 2011
+28079035|Plaza del Carmen| * Código desde enero 2011
+28079004|Plaza de Espana|
+28079005|Barrio del Pilar| * Código desde enero 2011
+28079039|Barrio del Pilar| * Código desde enero 2011
+28079006|Plaza Doctor Maranon|- 27/11/2009 (08:00 h.)
+28079007|Plaza Marques de Salamanca|- 30/12/2009 (14:00 h.)
+28079008|Escuelas Aguirre|
+28079009|Plaza Luca de Tena|- 07/12/2009 (08:00 h.)
+28079010|Cuatro Caminos|
+28079038|Cuatro Caminos| * Código desde enero 2011
+28079011|Avenida Ramon y Cajal|
+28079012|Plaza Manuel Becerra|- 30/12/2009 (14:00 h.)
+28079013|Vallecas| * Código desde enero 2011
+28079040|Vallecas| * Código desde enero 2011
+28079014|Plaza Fernadez Ladreda|- 02/12/2009 (09:00 h.)
+28079015|Plaza Castilla|- 17/10/2008 (11:00 h.)
+28079016|Arturo Soria|
+28079017|Villaverde Alto|
+28079018|Calle Farolillo|
+28079019|Huerta Castaneda|- 30/12/2009 (13:00 h.)
+28079020|Moratalaz| * Código desde enero 2011
+28079036|Moratalaz| * Código desde enero 2011
+28079021|Plaza Cristo Rey|- 04/12/2009 (14:00 h.)
+28079022|Paseo Pontones|- 20/11/2009 (10:00 h.)
+28079023|Alcalá|- 30/12/2009 (14:00 h.)
+28079024|Casa de Campo|
+28079025|Santa Eugenia|- 16/11/2009 (10:00 h.)
+28079026|Urbanizacion Embajada Barajas|- 11/01/2010 (09:00 h.)
+28079027|Barajas|
+28079047|Mendez Alvaro|- 21/12/2009 (00:00 h.)
+28079048|Paseo Castellana|- 01/06/2010 (00:00 h.)
+28079049|Retiro|- 01/01/2010 (00:00 h.)
+28079050|Plaza Castilla|- 08/02/2010 (00:00 h.)
+28079054|Ensanche Vallecas|- 11/12/2009 (00:00 h.)
+28079055|Urbanizacion Embajada Barajas|- 20/01/2010 (15:00 h.)
+28079056|Plaza Fernandez Ladreda|- 18/01/2010 (12:00 h.)
+28079057|Sanchinarro|- 24/11/2009 (00:00 h.)
+28079058|El Pardo|- 30/11/2009 (13:00 h.)
+28079059|Parque Juan Carlos I|- 14/12/2009 (00:00 h.)
+28079086|Tres Olivos|- 14/01/2010 (13:00 h.)
+28079060|Tres Olivos|- 14/01/2010 (13:00 h.)
+28079099|RED|- Media de todas las estaciones

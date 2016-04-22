@@ -1,0 +1,26 @@
+01|Dioxido de Azufre|SO2 µg/m3 38 Fluorescencia ultravioleta
+06|Monoxido de Carbono|CO mg/m3 48 Absorción infrarroja
+07|Monoxido de Nitrogeno|NO µg/m3 08 Quimioluminiscencia
+08|Dioxido de Nitrogeno|NO2 µg/m3 08 Id.
+09|Particulas < 2.5 µm|PM2.5 µg/m3 47 Microbalanza
+10|Particulas < 10 µm|PM10 µg/m3 47 Id.
+12|Oxidos de Nitrogeno|NOx µg/m3 08 Quimioluminiscencia
+14|Ozono|O3 µg/m3 06 Absorcion ultravioleta
+20|Tolueno|TOL µg/m3 59 Cromatografía de gases
+30|Benceno|BEN µg/m3 59 Id.
+35|Etilbenceno|EBE µg/m3 59 Id.
+37|Metaxileno|MXY µg/m3 59 Id.
+38|Paraxileno|PXY µg/m3 59 Id.
+39|Ortoxileno|OXY µg/m3 59 Id.
+42|Hidrocarburos totales (hexano)|TCH mg/m3 02 Ionización de llama
+43|Hidrocarburos (metano)|CH4 mg/m3 02 Id.
+44|Hidrocarburos no metanicos (hexano)|NMHC mg/m3 02 Id.
+80|Radiacion ultravioleta|UV mW/m2 98 Sensores meteorológicos
+81|Velocidad del viento|VV m/s 98 Id.
+82|Direccion del viento|DV Grados o cuadrante 98 Id.
+83|Temperatura|TMP ºC 98 Id.
+86|Humedad relativa|HR % 98 Id.
+87|Presion|PRB mb 98 Id.
+88|Radiacion solar|RS kW/m2 98 Id.
+89|Precipitacion|LL l/m2 98 Id.
+92|Lluvia acida|LLA pH 98 Id.
