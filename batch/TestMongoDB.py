@@ -47,7 +47,7 @@ def main():
     # BASE_DIR = /Users/akash/PycharmProjects/masterbigdata
 
     # Leemos un fichero de ejemplo
-    file = os.path.join(BASE_DIR + '/datasets/batch/calidadaire', 'ficheroSalida.txt')
+    file = os.path.join(BASE_DIR + '/datasets/batch/calidadaire', 'ficheroSalidaAire.txt')
 
     rddfFile = sqlContext.jsonFile(file)
 
