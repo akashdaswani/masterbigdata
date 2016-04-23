@@ -1,11 +1,12 @@
 from pyspark import SparkContext, SparkConf
 from pymongo import MongoClient
+from pyspark.sql import SQLContext
 
 
 import pymongo_spark
 import os.path
 import ConfigParser
-import pymongo
+
 
 # Importante: activate pymongo_spark.
 pymongo_spark.activate()
@@ -13,6 +14,8 @@ pymongo_spark.activate()
 def main():
     conf = SparkConf().setAppName("pyspark test")
     sc = SparkContext(conf=conf)
+    sqlContext = SQLContext(sc)
+
 
     config = ConfigParser.ConfigParser()
     config.read('configuration.cfg')
@@ -44,11 +47,14 @@ def main():
     # BASE_DIR = /Users/akash/PycharmProjects/masterbigdata
 
     # Leemos un fichero de ejemplo
-    file = os.path.join(BASE_DIR + '/datasets/batch/calidadaire', 'ficheroSalida.txt')
-    rddfFile = sc.textFile(file)
+    file = os.path.join(BASE_DIR + '/datasets/batch/calidadaire', 'ficheroSalidaAire.txt')
+
+    rddfFile = sqlContext.jsonFile(file)
 
      # Almancemos en mongodb el fichero
     rddfFile.saveToMongoDB(mongodb_connection + 'test.tabla3')
+
+
 
 if __name__ == '__main__':
     main()
