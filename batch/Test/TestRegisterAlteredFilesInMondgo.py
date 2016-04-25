@@ -53,7 +53,7 @@ if __name__ == "__main__":
     mongodb_connection = config.get('BatchProperties', 'URLMongoDB')
 
     rowDataTrafico = rowDataTrafico.map(lambda row: row.asDict())
-    rowDataTrafico.saveToMongoDB(mongodb_connection + 'test.trafico')
+    rowDataTrafico.saveToMongoDB(mongodb_connection + 'test.traffic')
 
 
     rawDataAire = sc.textFile(BASE_DIR + "/datasets/batch/ficherosTratados/ficheroSalidaAire.txt")
@@ -71,4 +71,4 @@ if __name__ == "__main__":
     ))
 
     rowDataAire = rowDataAire.map(lambda row: row.asDict())
-    rowDataAire.saveToMongoDB(mongodb_connection + 'test.calidadaire')
+    rowDataAire.saveToMongoDB(mongodb_connection + 'test.air')
