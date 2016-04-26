@@ -65,7 +65,7 @@ def setLineSeparatorDaily(lineOriginal):
 
     while topLimit <= CONST_FIRST_PHASE:
         data = lineOriginal[belowLimit:topLimit]
-        print data
+        # print data
 
         lineSeparator=lineSeparator+CONST_SEPARATOR+data
 
@@ -114,7 +114,7 @@ def unionFiles(fileAirStations, fileCatalog, fileMagnitude, dirFileOut):
         station = stationName(fileCatalog, line)
         magnitude = magnitudeName(fileMagnitude, line)
         unionFileLine = magnitude+CONST_SEPARATOR+station+CONST_SEPARATOR+lineSeparator
-        print unionFileLine
+        # print unionFileLine
         f.write(unionFileLine+CONST_ENTER)
     f.close()
 
