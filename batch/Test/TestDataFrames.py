@@ -5,31 +5,27 @@ from pyspark.sql import Row
 sc= SparkContext(appName="SparkContext")
 sqlContext = SQLContext(sc)
 
-
-data_file = "C:/Users/pvaquero/Desktop/KSCHOOL/PROYECTOS/ficherosGenerados/ficheroSalida.txt"
-raw_data = sc.textFile(data_file).cache()
-
-csv_data = raw_data.map(lambda p: p.split("|"))
-row_data = csv_data.map(lambda p: Row(
+airFiles = sc.textFile("/Users/akash/PycharmProjects/masterbigdata/datasets/batch_processing/air/*.txt")
+airData = airFiles.map(lambda p: p.split("|")).map(lambda p: Row(
     product=p[0],
     road=p[1],
-    estation=p[2],
+    station=p[2],
     measurement=int(p[3]),
     type=int(p[4]),
     time_format=int(p[5]),
     year=int(p[6]),
     month=int(p[7]),
-    value=int(p[8]),
-    days=int(p[9])
+    day=int(p[8]),
+    value=int(p[9])
 ))
 
-print row_data.take(1)
+airDF = sqlContext.createDataFrame(airData)
+airDF.registerTempTable("air")
 
-interactions_df = sqlContext.createDataFrame(row_data)
-interactions_df.registerTempTable("air_measurement")
+query = sqlContext.sql("SELECT distinct station FROM air WHERE road = 'Plaza de Espana'")
+stations = query.map(lambda p: "Name: " + p.station)
+for station in stations.collect():
+  print(station)
 
-tcp_interactions = sqlContext.sql("""
-               SELECT type FROM air_measurement WHERE road = 'Plaza de Espana'
-           """)
-
-print tcp_interactions.collect()
+print query.collect()
+print query.printSchema()
