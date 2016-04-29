@@ -58,15 +58,43 @@ if __name__ == "__main__":
 
     trafficDF = sqlContext.createDataFrame(trafficData)
     trafficDF.registerTempTable("traffic")
-    
-    query = sqlContext.sql("SELECT t.year, t.month, t.day, t.product, t.station, t.measurement, a.intensity "
-                           "FROM traffic t, air a "
-                           "WHERE t.year = a.year "
-                           "AND t.month = a.month "
-                           "AND t.day = a.day "
-                           "AND t.station = a.station")
-    
+
+
+    query = sqlContext.sql("SELECT a.year, a.month, a.day, a.station, a.valueAir, t.intensity "
+                           "FROM ("
+                                "SELECT year, month, day, station, SUM(value) valueAir "
+                                "FROM air "
+                                "GROUP BY year, month, day, station"
+                           ") a LEFT JOIN ("
+                                "SELECT year, month, day, station, SUM(intensity) intensity "
+                                "FROM traffic "
+                                "GROUP BY year, month, day, station "
+                           ") t ON a.year = t.year "
+                                "AND a.month = t.month "
+                                "AND a.day = t.day "
+                                "AND a.station = t.station ")
+
+    #query = sqlContext.sql("SELECT year, month, day, station, SUM(value) "
+    #                       "FROM air "
+    #                       "GROUP BY year, month, day, station ")
+
+
+    #query = sqlContext.sql("SELECT year, month, day, station, SUM(intensity) "
+    #                       "FROM traffic "
+    #                       "GROUP BY year, month, day, station ")
+
     for t in query.collect():
-        print str(t.year) + "|" + str(t.month) + "|" + str(t.day) \
-              + "|" + str(t.product) + "|" + str(t.station) + "|" + str(t.measurement) \
-              + "|" + str(t.intensity)
+        print str(t)
+
+
+    #query = sqlContext.sql("SELECT t.year, t.month, t.day, a.product, t.station, t.measurement, a.intensity "
+    #                       "FROM traffic t, air a "
+    #                       "WHERE t.year = a.year "
+    #                       "AND t.month = a.month "
+    #                       "AND t.day = a.day "
+    #                       "AND t.station = a.station")
+
+    #for t in query.collect():
+    #    print str(t.year) + "|" + str(t.month) + "|" + str(t.day) \
+    #          + "|" + str(t.station) + "|" + str(t.measurement) \
+    #          + "|" + str(t.intensity)
