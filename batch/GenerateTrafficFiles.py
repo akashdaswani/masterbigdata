@@ -1,7 +1,6 @@
 from os import listdir
 
 import ConfigParser
-import os.path
 
 CONST_SPLIT_CSV = ";"
 CONST_SPLIT_SPACE = " "
