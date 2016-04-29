@@ -35,22 +35,6 @@ CONST_UNO = 1
 CONST_DOS = 2
 CONST_TRES = 3
 
-config = ConfigParser.ConfigParser()
-config.read('configuration.cfg')
-
-filesInDisk = config.getboolean('BatchProperties', 'FilesInDisk')
-
-if filesInDisk:
-    dirFilesAir = config.get('BatchProperties', 'FilesAirLocal')
-    dirAirStation = config.get('BatchProperties', 'FileAirStationsLocal')
-    dirAirScale = config.get('BatchProperties', 'FileAirScaleLocal')
-    dirFilesAirGenerated = config.get('BatchProperties', 'FilesAirGeneratedLocal')
-else:
-    dirFilesAir = config.get('BatchProperties', 'FilesAirHDFS')
-    dirAirStation = config.get('BatchProperties', 'FileAirStationsHDFS')
-    dirAirScale = config.get('BatchProperties', 'FileAirScaleHDFS')
-    dirFilesAirGenerated = config.get('BatchProperties', 'FilesAirGeneratedHDFS')
-
 def completeSecondPhase(belowLimit, topLimit, lineOriginal, CONST_INITIAL_SECOND_PHASE, CONST_FINAL_SECOND_PHASE, CONST_INCREASE_SECOND_PHASE, lengthLine):
 
     lineSeparatorSecondPhase = CONST_EMPTY
@@ -83,8 +67,10 @@ def setLineSeparatorDaily(lineOriginal):
 
     while topLimit <= CONST_FIRST_PHASE:
         data = lineOriginal[belowLimit:topLimit]
-        #print data
+        print data
+
         lineSeparator=lineSeparator+CONST_SEPARATOR+data
+
         belowLimit = topLimit
         topLimit = topLimit + CONST_FEATURES_LIMIT
 
@@ -158,8 +144,23 @@ def unionFiles(fileAirStations, fileCatalog, fileMagnitude, dirFileOut):
 
     f.close()
 
-
 if __name__ == "__main__":
+
+    config = ConfigParser.ConfigParser()
+    config.read('configuration.cfg')
+
+    filesInDisk = config.getboolean('BatchProperties', 'FilesInDisk')
+
+    if filesInDisk:
+        dirFilesAir = config.get('BatchProperties', 'FilesAirLocal')
+        dirAirStation = config.get('BatchProperties', 'FileAirStationsLocal')
+        dirAirScale = config.get('BatchProperties', 'FileAirScaleLocal')
+        dirFilesAirGenerated = config.get('BatchProperties', 'FilesAirGeneratedLocal')
+    else:
+        dirFilesAir = config.get('BatchProperties', 'FilesAirHDFS')
+        dirAirStation = config.get('BatchProperties', 'FileAirStationsHDFS')
+        dirAirScale = config.get('BatchProperties', 'FileAirScaleHDFS')
+        dirFilesAirGenerated = config.get('BatchProperties', 'FilesAirGeneratedHDFS')
 
     for fileName in listdir(dirFilesAir):
         if (fileName.endswith("txt")):
