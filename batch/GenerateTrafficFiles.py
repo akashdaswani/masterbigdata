@@ -31,6 +31,8 @@ def getAirMeasurementPoint(stationCode):
         if measurementPoint[1] == stationCode or str('0' + measurementPoint[1]) == stationCode:
             return measurementPoint[2]
 
+    return 'None'
+
 
 #identif;fecha;intensidad;ocupacion;carga;tipo;vmed;error;periodo_integracion
 #PM20152;12/7/13 7:15;1065;9;48;M;73;N;4
@@ -38,11 +40,13 @@ def processTrafficFile (dirTraffic, fileName, dirResult):
     fileAirStation = open(dirTraffic + fileName)
     fileAirStationProcess = open(dirResult + fileName, CONST_WRITE_MODE)
     lines = fileAirStation.readlines()
-    for line in lines[0].split('\r'):
-        lineSplit = line.split(CONST_SPLIT_CSV)
-        header = lineSplit[0]
-        if header <> 'identif':
-            stationCode = lineSplit[0]
+    i = -1;
+    for line in lines:
+        i = i + 1
+        if i != 0:
+            line = line.rstrip()
+            lineSplit = line.split(CONST_SPLIT_CSV)
+            stationCode = lineSplit[0].replace("\"", "")
             airMeasurementPoint = getAirMeasurementPoint(stationCode)
 
             if len(lineSplit) > 1:
@@ -50,17 +54,17 @@ def processTrafficFile (dirTraffic, fileName, dirResult):
                 datetime = lineSplit[1]
                 dateTimeSplit = datetime.split(CONST_SPLIT_SPACE)
                 date = dateTimeSplit[0]
-                dateSplit = date.split("/")
-                unionFileLine = str(lineSplit[0])+CONST_SEPARATOR\
-                                +str(dateSplit[2])+CONST_SEPARATOR\
+                dateSplit = date.split("-")
+                unionFileLine = str(stationCode)+CONST_SEPARATOR\
+                                +str(dateSplit[0].replace("\"", ""))+CONST_SEPARATOR\
                                 +str(dateSplit[1])+CONST_SEPARATOR\
-                                +str(dateSplit[0])+CONST_SEPARATOR\
+                                +str(dateSplit[2])+CONST_SEPARATOR\
                                 +str(lineSplit[2])+CONST_SEPARATOR\
                                 +str(lineSplit[3])+CONST_SEPARATOR\
                                 +str(lineSplit[4])+CONST_SEPARATOR\
-                                +str(lineSplit[5])+CONST_SEPARATOR\
+                                +str(lineSplit[5].replace("\"", ""))+CONST_SEPARATOR\
                                 +str(lineSplit[6])+CONST_SEPARATOR\
-                                +str(lineSplit[7])+CONST_SEPARATOR\
+                                +str(lineSplit[7].replace("\"", ""))+CONST_SEPARATOR\
                                 +str(lineSplit[8])+CONST_SEPARATOR\
                                 +str(airMeasurementPoint)
 

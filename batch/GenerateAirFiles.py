@@ -14,10 +14,10 @@ CONST_FIRST_PHASE = 18
 CONST_INITIAL = 0
 CONST_POINT = "."
 CONST_EMPTY = ""
-CONST_INITIAL_SECOND_PHASE_WITH_POINT = 2
+CONST_INITIAL_SECOND_PHASE_WITH_POINT = 1
 CONST_FINAL_SECOND_PHASE_WITH_POINT = 3
 CONST_INCREASE_SECOND_PHASE_WITH_POINT = 5
-CONST_INITIAL_SECOND_PHASE_WITHOUT_POINT = 3
+CONST_INITIAL_SECOND_PHASE_WITHOUT_POINT = 2
 CONST_FINAL_SECOND_PHASE_WITHOUT_POINT = 4
 CONST_INCREASE_SECOND_PHASE_WITHOUT_POINT = 6
 CONST_TOTAL_LENGTH_LINE = 206
@@ -30,26 +30,44 @@ CONST_MAGNITUDE_BELOW_LIMIT = 8
 CONST_MAGNITUDE_TOP_LIMIT = 10
 CONST_MAGNITUDE_NAME = 1
 CONST_MAGNITUDE_NOT_FOUND = "N/A"
+CONST_CERO = 0
+CONST_UNO = 1
+CONST_DOS = 2
+CONST_TRES = 3
 
+config = ConfigParser.ConfigParser()
+config.read('configuration.cfg')
 
-def completeSecondPhase(lineSeparator, belowLimit, topLimit, lineOriginal, CONST_INITIAL_SECOND_PHASE, CONST_FINAL_SECOND_PHASE, CONST_INCREASE_SECOND_PHASE, lengthLine):
+filesInDisk = config.getboolean('BatchProperties', 'FilesInDisk')
 
-    lineSeparatorSecondPhase = lineSeparator
+if filesInDisk:
+    dirFilesAir = config.get('BatchProperties', 'FilesAirLocal')
+    dirAirStation = config.get('BatchProperties', 'FileAirStationsLocal')
+    dirAirScale = config.get('BatchProperties', 'FileAirScaleLocal')
+    dirFilesAirGenerated = config.get('BatchProperties', 'FilesAirGeneratedLocal')
+else:
+    dirFilesAir = config.get('BatchProperties', 'FilesAirHDFS')
+    dirAirStation = config.get('BatchProperties', 'FileAirStationsHDFS')
+    dirAirScale = config.get('BatchProperties', 'FileAirScaleHDFS')
+    dirFilesAirGenerated = config.get('BatchProperties', 'FilesAirGeneratedHDFS')
+
+def completeSecondPhase(belowLimit, topLimit, lineOriginal, CONST_INITIAL_SECOND_PHASE, CONST_FINAL_SECOND_PHASE, CONST_INCREASE_SECOND_PHASE, lengthLine):
+
+    lineSeparatorSecondPhase = CONST_EMPTY
     belowLimit = belowLimit + CONST_INITIAL_SECOND_PHASE
     topLimit = topLimit + CONST_FINAL_SECOND_PHASE
-    counter = 0
-    summation = 0
+    counter = CONST_CERO
     while topLimit <= lengthLine:
         data = lineOriginal[belowLimit:topLimit]
         if CONST_V in data:
-            counter = counter + 1
-            iterationString = data[:2]
-            iterationInt = int(iterationString)
-            summation = summation + iterationInt
+            counter = counter + CONST_UNO
+            iterationString = data[:CONST_TRES]
+            lineSeparatorSecondPhase = lineSeparatorSecondPhase + CONST_SEPARATOR + iterationString
         belowLimit = belowLimit + CONST_INCREASE_SECOND_PHASE
         topLimit = topLimit + CONST_INCREASE_SECOND_PHASE
 
-    lineSeparatorSecondPhase = lineSeparatorSecondPhase + CONST_SEPARATOR + str(summation) + CONST_SEPARATOR + str(counter)
+    lineSeparatorSecondPhase = str(counter) + lineSeparatorSecondPhase
+
     return lineSeparatorSecondPhase
 
 def setLineSeparatorDaily(lineOriginal):
@@ -65,24 +83,25 @@ def setLineSeparatorDaily(lineOriginal):
 
     while topLimit <= CONST_FIRST_PHASE:
         data = lineOriginal[belowLimit:topLimit]
-        # print data
-
+        #print data
         lineSeparator=lineSeparator+CONST_SEPARATOR+data
-
         belowLimit = topLimit
         topLimit = topLimit + CONST_FEATURES_LIMIT
 
     if lengthLine == CONST_TOTAL_LENGTH_LINE:
 
-        lineSeparatorSalida = completeSecondPhase(lineSeparator, belowLimit, topLimit, lineOriginal,
+        lineSeparatorSalida = completeSecondPhase(belowLimit, topLimit, lineOriginal,
                                             CONST_INITIAL_SECOND_PHASE_WITHOUT_POINT,
                                             CONST_FINAL_SECOND_PHASE_WITHOUT_POINT,
                                             CONST_INCREASE_SECOND_PHASE_WITHOUT_POINT, lengthLine)
     else:
-        lineSeparatorSalida = completeSecondPhase(lineSeparator, belowLimit, topLimit, lineOriginal,
+        lineSeparatorSalida = completeSecondPhase(belowLimit, topLimit, lineOriginal,
                                             CONST_INITIAL_SECOND_PHASE_WITH_POINT,
                                             CONST_FINAL_SECOND_PHASE_WITH_POINT,
                                             CONST_INCREASE_SECOND_PHASE_WITH_POINT, lengthLine)
+
+    lineSeparatorSalida = lineSeparator + CONST_SEPARATOR + lineSeparatorSalida
+
     return lineSeparatorSalida
 
 def stationName(file, searchLine):
@@ -106,36 +125,41 @@ def magnitudeName(file, searchLine):
     return magnitude
 
 def unionFiles(fileAirStations, fileCatalog, fileMagnitude, dirFileOut):
-    f = open(dirFileOut, CONST_WRITE_MODE)
     fileAir = open(fileAirStations)
+    f = open(dirFileOut, CONST_WRITE_MODE)
     for line in fileAir.readlines():
         line = line.replace(CONST_POINT,CONST_EMPTY)
         lineSeparator = setLineSeparatorDaily(line)
         station = stationName(fileCatalog, line)
         magnitude = magnitudeName(fileMagnitude, line)
         unionFileLine = magnitude+CONST_SEPARATOR+station+CONST_SEPARATOR+lineSeparator
-        # print unionFileLine
-        f.write(unionFileLine+CONST_ENTER)
+        lineSeparatorSplit = unionFileLine.split(CONST_SEPARATOR)
+        lineSeparatorBase = CONST_EMPTY
+        counterBase = CONST_CERO
+        for part in lineSeparatorSplit:
+            if counterBase <= 7:
+                if lineSeparatorBase == CONST_EMPTY:
+                    lineSeparatorBase = part
+                else:
+                    lineSeparatorBase = lineSeparatorBase + CONST_SEPARATOR + part
+            counterBase = counterBase + CONST_UNO
+        daysInMonth = int(lineSeparatorSplit[8])
+        counter = CONST_UNO
+        firstStep = 9
+
+        while counter <= daysInMonth:
+            monthDay = str(counter)
+            if len(monthDay) == 1:
+                monthDay = str(CONST_CERO) + monthDay
+            lineSeparatorFile = lineSeparatorBase + CONST_SEPARATOR + monthDay + CONST_SEPARATOR + lineSeparatorSplit[firstStep]
+            firstStep = firstStep + CONST_UNO
+            counter = counter + CONST_UNO
+            f.write(lineSeparatorFile + CONST_ENTER)
+
     f.close()
 
 
 if __name__ == "__main__":
-
-    config = ConfigParser.ConfigParser()
-    config.read('configuration.cfg')
-
-    filesInDisk = config.getboolean('BatchProperties', 'FilesInDisk')
-
-    if filesInDisk:
-        dirFilesAir = config.get('BatchProperties', 'FilesAirLocal')
-        dirAirStation = config.get('BatchProperties', 'FileAirStationsLocal')
-        dirAirScale = config.get('BatchProperties', 'FileAirScaleLocal')
-        dirFilesAirGenerated = config.get('BatchProperties', 'FilesAirGeneratedLocal')
-    else:
-        dirFilesAir = config.get('BatchProperties', 'FilesAirHDFS')
-        dirAirStation = config.get('BatchProperties', 'FileAirStationsHDFS')
-        dirAirScale = config.get('BatchProperties', 'FileAirScaleHDFS')
-        dirFilesAirGenerated = config.get('BatchProperties', 'FilesAirGeneratedHDFS')
 
     for fileName in listdir(dirFilesAir):
         if (fileName.endswith("txt")):
