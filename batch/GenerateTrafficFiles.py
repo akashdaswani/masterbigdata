@@ -54,8 +54,13 @@ def processTrafficFile (dirTraffic, fileName, dirResult):
                 dateTimeSplit = datetime.split(CONST_SPLIT_SPACE)
                 date = dateTimeSplit[0]
                 dateSplit = date.split("-")
+
+                year = dateSplit[0].replace("\"", "")
+                if (year.startswith("20")):
+                    year = year[2:4]
+
                 unionFileLine = str(stationCode)+CONST_SEPARATOR\
-                                +str(dateSplit[0].replace("\"", ""))+CONST_SEPARATOR\
+                                +str(year)+CONST_SEPARATOR\
                                 +str(dateSplit[1])+CONST_SEPARATOR\
                                 +str(dateSplit[2])+CONST_SEPARATOR\
                                 +str(lineSplit[2])+CONST_SEPARATOR\
