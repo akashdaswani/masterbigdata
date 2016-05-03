@@ -1,8 +1,17 @@
 from pyspark import SparkContext
 from pyspark.sql import SQLContext
 from pyspark.sql.types import Row, StructField, StructType, StringType, IntegerType
+from pyspark.mllib.regression import LinearRegressionWithSGD, LabeledPoint
 
 import ConfigParser
+
+
+# Load and parse the data
+def parsePoint(line):
+    print "Linea: " + str(line)
+    values = [int(x) for x in line.replace(',', ' ').split(' ')]
+    return LabeledPoint(values[0], values[1:])
+
 
 if __name__ == "__main__":
 
@@ -60,7 +69,7 @@ if __name__ == "__main__":
     trafficDF.registerTempTable("traffic")
 
 
-    query = sqlContext.sql("SELECT a.year, a.month, a.day, a.station, a.valueAir, t.intensity "
+    query = sqlContext.sql("SELECT a.valueAir, a.station, a.year, a.month, a.day, t.intensity "
                            "FROM ("
                                 "SELECT year, month, day, station, SUM(value) valueAir "
                                 "FROM air "
@@ -73,7 +82,25 @@ if __name__ == "__main__":
                            ") t ON a.year = t.year "
                                 "AND a.month = t.month "
                                 "AND a.day = t.day "
-                                "AND a.station = t.station ")
+                                "AND a.station = t.station "
+                           "")
 
+    # WHERE a.station = '28079004'
     for t in query.collect():
         print str(t)
+
+    #temp = query.map(lambda line:LabeledPoint(line[0],[line[1:]]))
+    #temp.take(5)
+
+    # Build the model
+    #model = LinearRegressionWithSGD.train(temp, iterations=10, step=0.0000001)
+
+    #model.predict(temp)
+
+    # Evaluate the model on training data
+    #valuesAndPreds = temp.map(lambda p: (p.label, model.predict(p.features)))
+    #MSE = valuesAndPreds.map(lambda (v, p): (v - p)**2).reduce(lambda x, y: x + y) / valuesAndPreds.count()
+    #print("Mean Squared Error = " + str(MSE))
+
+    # Save and load model
+    #model.save(sc, "/Users/akash/PycharmProjects/masterbigdata/datasets/batch_processing/")
