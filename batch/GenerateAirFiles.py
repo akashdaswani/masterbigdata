@@ -24,6 +24,7 @@ CONST_TOTAL_LENGTH_LINE = 205
 CONST_WRITE_MODE = "w"
 CONST_READ_MODE = "r"
 CONST_V = "V"
+CONST_N = "N"
 CONST_ENTER = '\n'
 CONST_STATION_NAME = 1
 CONST_MAGNITUDE_BELOW_LIMIT = 8
@@ -41,12 +42,24 @@ def completeSecondPhase(belowLimit, topLimit, lineOriginal, CONST_INITIAL_SECOND
     belowLimit = belowLimit + CONST_INITIAL_SECOND_PHASE
     topLimit = topLimit + CONST_FINAL_SECOND_PHASE
     counter = CONST_CERO
+    line40 = lineOriginal[:30]
+    if "N" in line40:
+        error = CONST_UNO
     while topLimit <= lengthLine:
         data = lineOriginal[belowLimit:topLimit]
         if CONST_V in data:
             counter = counter + CONST_UNO
             iterationString = data[:CONST_TRES]
             lineSeparatorSecondPhase = lineSeparatorSecondPhase + CONST_SEPARATOR + iterationString
+        else:
+            if CONST_N not in data:
+                belowLimit = belowLimit+CONST_UNO
+                topLimit = topLimit+CONST_UNO
+                data= lineOriginal[belowLimit:topLimit]
+                if CONST_V in data:
+                    counter = counter + CONST_UNO
+                    iterationString = data[:CONST_TRES]
+                    lineSeparatorSecondPhase = lineSeparatorSecondPhase + CONST_SEPARATOR + iterationString
         belowLimit = belowLimit + CONST_INCREASE_SECOND_PHASE
         topLimit = topLimit + CONST_INCREASE_SECOND_PHASE
 
